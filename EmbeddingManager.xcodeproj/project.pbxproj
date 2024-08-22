@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		AB426E092C75DECC0057E036 /* EmbeddingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB426E082C75DECC0057E036 /* EmbeddingManager.h */; };
 		AB426E0B2C75DECC0057E036 /* EmbeddingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */; };
+		AB426E122C75DEEB0057E036 /* EmbeddingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB426E052C75DECC0057E036 /* libEmbeddingManager.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libEmbeddingManager.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB426E082C75DECC0057E036 /* EmbeddingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddingManager.h; sourceTree = "<group>"; };
 		AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddingManager.m; sourceTree = "<group>"; };
+		AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			children = (
 				AB426E082C75DECC0057E036 /* EmbeddingManager.h */,
 				AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */,
+				AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */,
 			);
 			path = EmbeddingManager;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					AB426E042C75DECC0057E036 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -122,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB426E0B2C75DECC0057E036 /* EmbeddingManager.m in Sources */,
+				AB426E122C75DEEB0057E036 /* EmbeddingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,24 +251,29 @@
 		AB426E0F2C75DECC0057E036 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		AB426E102C75DECC0057E036 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
