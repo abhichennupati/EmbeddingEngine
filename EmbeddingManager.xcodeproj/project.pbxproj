@@ -13,6 +13,7 @@
 		AB426E142C7702130057E036 /* BertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB426E132C7702130057E036 /* BertHelper.swift */; };
 		AB426E172C77B9430057E036 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = AB426E162C77B9430057E036 /* Transformers */; };
 		AB426E1A2C78774C0057E036 /* DistilBERT.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AB426E192C78774C0057E036 /* DistilBERT.mlpackage */; };
+		AB426E1D2C7C391D0057E036 /* SwiftFaiss in Frameworks */ = {isa = PBXBuildFile; productRef = AB426E1C2C7C391D0057E036 /* SwiftFaiss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB426E172C77B9430057E036 /* Transformers in Frameworks */,
+				AB426E1D2C7C391D0057E036 /* SwiftFaiss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,7 @@
 			name = EmbeddingManager;
 			packageProductDependencies = (
 				AB426E162C77B9430057E036 /* Transformers */,
+				AB426E1C2C7C391D0057E036 /* SwiftFaiss */,
 			);
 			productName = EmbeddingManager;
 			productReference = AB426E052C75DECC0057E036 /* libEmbeddingManager.dylib */;
@@ -124,6 +127,7 @@
 			mainGroup = AB426DFC2C75DECC0057E036;
 			packageReferences = (
 				AB426E152C77B9430057E036 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+				AB426E1B2C7C391D0057E036 /* XCRemoteSwiftPackageReference "SwiftFaiss" */,
 			);
 			productRefGroup = AB426E062C75DECC0057E036 /* Products */;
 			projectDirPath = "";
@@ -325,6 +329,14 @@
 				minimumVersion = 0.1.9;
 			};
 		};
+		AB426E1B2C7C391D0057E036 /* XCRemoteSwiftPackageReference "SwiftFaiss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jkrukowski/SwiftFaiss";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -332,6 +344,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AB426E152C77B9430057E036 /* XCRemoteSwiftPackageReference "swift-transformers" */;
 			productName = Transformers;
+		};
+		AB426E1C2C7C391D0057E036 /* SwiftFaiss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB426E1B2C7C391D0057E036 /* XCRemoteSwiftPackageReference "SwiftFaiss" */;
+			productName = SwiftFaiss;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

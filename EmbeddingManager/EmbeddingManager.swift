@@ -83,6 +83,12 @@ class EmbeddingManager {
         return result
     }
     
+    /// Takes in the existing text, and the new text, and returns array of tuples, the first variable being the index of the change, and the second variable being the length of the change.
+    /// This helps us determine where to calculate new embeddings when text has been updated.
+    /// Implemented using DP, O(MN) time complexity
+    private func getChanges(oldText: String, newText: String) -> [(Int, Int)]{
+        return []
+    }
 }
 
 
