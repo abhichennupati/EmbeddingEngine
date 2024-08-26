@@ -11,6 +11,8 @@
 		AB426E0B2C75DECC0057E036 /* EmbeddingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */; };
 		AB426E122C75DEEB0057E036 /* EmbeddingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */; };
 		AB426E142C7702130057E036 /* BertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB426E132C7702130057E036 /* BertHelper.swift */; };
+		AB426E172C77B9430057E036 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = AB426E162C77B9430057E036 /* Transformers */; };
+		AB426E1A2C78774C0057E036 /* DistilBERT.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AB426E192C78774C0057E036 /* DistilBERT.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddingManager.m; sourceTree = "<group>"; };
 		AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingManager.swift; sourceTree = "<group>"; };
 		AB426E132C7702130057E036 /* BertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BertHelper.swift; sourceTree = "<group>"; };
+		AB426E192C78774C0057E036 /* DistilBERT.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = DistilBERT.mlpackage; path = ../../../exporters/exported/DistilBERT.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB426E172C77B9430057E036 /* Transformers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 		AB426E072C75DECC0057E036 /* EmbeddingManager */ = {
 			isa = PBXGroup;
 			children = (
+				AB426E192C78774C0057E036 /* DistilBERT.mlpackage */,
 				AB426E082C75DECC0057E036 /* EmbeddingManager.h */,
 				AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */,
 				AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */,
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = EmbeddingManager;
+			packageProductDependencies = (
+				AB426E162C77B9430057E036 /* Transformers */,
+			);
 			productName = EmbeddingManager;
 			productReference = AB426E052C75DECC0057E036 /* libEmbeddingManager.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = AB426DFC2C75DECC0057E036;
+			packageReferences = (
+				AB426E152C77B9430057E036 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+			);
 			productRefGroup = AB426E062C75DECC0057E036 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB426E0B2C75DECC0057E036 /* EmbeddingManager.m in Sources */,
+				AB426E1A2C78774C0057E036 /* DistilBERT.mlpackage in Sources */,
 				AB426E142C7702130057E036 /* BertHelper.swift in Sources */,
 				AB426E122C75DEEB0057E036 /* EmbeddingManager.swift in Sources */,
 			);
@@ -303,6 +315,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB426E152C77B9430057E036 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB426E162C77B9430057E036 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB426E152C77B9430057E036 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB426DFD2C75DECC0057E036 /* Project object */;
 }

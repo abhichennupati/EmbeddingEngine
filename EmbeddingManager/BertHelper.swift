@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import CoreML
 
-func GetEmbedding(Tokens: [Int]) -> [Float] {
-    return []
+
+
+
+
+func GetTokens(Text: String) -> [Int] {
+    return [1, 2, 3, 4]
 }
