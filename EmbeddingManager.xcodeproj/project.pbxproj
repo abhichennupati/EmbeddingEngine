@@ -7,25 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB02419A2C86495700A25320 /* EmbeddingEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0241992C86495700A25320 /* EmbeddingEngineTests.swift */; };
+		AB02419B2C86495700A25320 /* libEmbeddingManager.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB426E052C75DECC0057E036 /* libEmbeddingManager.dylib */; };
+		AB036BA72C81B9CB00683AFE /* EmbeddingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB036BA62C81B9CB00683AFE /* EmbeddingEngine.swift */; };
 		AB426E092C75DECC0057E036 /* EmbeddingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB426E082C75DECC0057E036 /* EmbeddingManager.h */; };
 		AB426E0B2C75DECC0057E036 /* EmbeddingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */; };
-		AB426E122C75DEEB0057E036 /* EmbeddingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */; };
-		AB426E142C7702130057E036 /* BertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB426E132C7702130057E036 /* BertHelper.swift */; };
 		AB426E172C77B9430057E036 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = AB426E162C77B9430057E036 /* Transformers */; };
 		AB426E1A2C78774C0057E036 /* DistilBERT.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AB426E192C78774C0057E036 /* DistilBERT.mlpackage */; };
 		AB426E1D2C7C391D0057E036 /* SwiftFaiss in Frameworks */ = {isa = PBXBuildFile; productRef = AB426E1C2C7C391D0057E036 /* SwiftFaiss */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AB02419C2C86495700A25320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB426DFD2C75DECC0057E036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB426E042C75DECC0057E036;
+			remoteInfo = EmbeddingManager;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AB0241972C86495700A25320 /* EmbeddingEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmbeddingEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0241992C86495700A25320 /* EmbeddingEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingEngineTests.swift; sourceTree = "<group>"; };
+		AB0241A12C864FD200A25320 /* bert-vocab.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "bert-vocab.txt"; path = "../../../../Downloads/bert-vocab.txt"; sourceTree = "<group>"; };
+		AB036BA62C81B9CB00683AFE /* EmbeddingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingEngine.swift; sourceTree = "<group>"; };
 		AB426E052C75DECC0057E036 /* libEmbeddingManager.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libEmbeddingManager.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB426E082C75DECC0057E036 /* EmbeddingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddingManager.h; sourceTree = "<group>"; };
 		AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddingManager.m; sourceTree = "<group>"; };
-		AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingManager.swift; sourceTree = "<group>"; };
-		AB426E132C7702130057E036 /* BertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BertHelper.swift; sourceTree = "<group>"; };
 		AB426E192C78774C0057E036 /* DistilBERT.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = DistilBERT.mlpackage; path = ../../../exporters/exported/DistilBERT.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AB0241942C86495700A25320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB02419B2C86495700A25320 /* libEmbeddingManager.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB426E032C75DECC0057E036 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0241982C86495700A25320 /* EmbeddingEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB0241992C86495700A25320 /* EmbeddingEngineTests.swift */,
+			);
+			path = EmbeddingEngineTests;
+			sourceTree = "<group>";
+		};
 		AB426DFC2C75DECC0057E036 = {
 			isa = PBXGroup;
 			children = (
 				AB426E072C75DECC0057E036 /* EmbeddingManager */,
+				AB0241982C86495700A25320 /* EmbeddingEngineTests */,
 				AB426E062C75DECC0057E036 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				AB426E052C75DECC0057E036 /* libEmbeddingManager.dylib */,
+				AB0241972C86495700A25320 /* EmbeddingEngineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,11 +88,11 @@
 		AB426E072C75DECC0057E036 /* EmbeddingManager */ = {
 			isa = PBXGroup;
 			children = (
+				AB0241A12C864FD200A25320 /* bert-vocab.txt */,
 				AB426E192C78774C0057E036 /* DistilBERT.mlpackage */,
 				AB426E082C75DECC0057E036 /* EmbeddingManager.h */,
 				AB426E0A2C75DECC0057E036 /* EmbeddingManager.m */,
-				AB426E112C75DEEB0057E036 /* EmbeddingManager.swift */,
-				AB426E132C7702130057E036 /* BertHelper.swift */,
+				AB036BA62C81B9CB00683AFE /* EmbeddingEngine.swift */,
 			);
 			path = EmbeddingManager;
 			sourceTree = "<group>";
@@ -80,6 +111,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AB0241962C86495700A25320 /* EmbeddingEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0241A02C86495700A25320 /* Build configuration list for PBXNativeTarget "EmbeddingEngineTests" */;
+			buildPhases = (
+				AB0241932C86495700A25320 /* Sources */,
+				AB0241942C86495700A25320 /* Frameworks */,
+				AB0241952C86495700A25320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB02419D2C86495700A25320 /* PBXTargetDependency */,
+			);
+			name = EmbeddingEngineTests;
+			productName = EmbeddingEngineTests;
+			productReference = AB0241972C86495700A25320 /* EmbeddingEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AB426E042C75DECC0057E036 /* EmbeddingManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB426E0E2C75DECC0057E036 /* Build configuration list for PBXNativeTarget "EmbeddingManager" */;
@@ -108,8 +157,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					AB0241962C86495700A25320 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					AB426E042C75DECC0057E036 = {
 						CreatedOnToolsVersion = 15.4;
 						LastSwiftMigration = 1540;
@@ -134,25 +187,82 @@
 			projectRoot = "";
 			targets = (
 				AB426E042C75DECC0057E036 /* EmbeddingManager */,
+				AB0241962C86495700A25320 /* EmbeddingEngineTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AB0241952C86495700A25320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AB0241932C86495700A25320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB02419A2C86495700A25320 /* EmbeddingEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB426E022C75DECC0057E036 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AB426E0B2C75DECC0057E036 /* EmbeddingManager.m in Sources */,
 				AB426E1A2C78774C0057E036 /* DistilBERT.mlpackage in Sources */,
-				AB426E142C7702130057E036 /* BertHelper.swift in Sources */,
-				AB426E122C75DEEB0057E036 /* EmbeddingManager.swift in Sources */,
+				AB036BA72C81B9CB00683AFE /* EmbeddingEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AB02419D2C86495700A25320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB426E042C75DECC0057E036 /* EmbeddingManager */;
+			targetProxy = AB02419C2C86495700A25320 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AB02419E2C86495700A25320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alfred.EmbeddingEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB02419F2C86495700A25320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alfred.EmbeddingEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		AB426E0C2C75DECC0057E036 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -300,6 +410,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AB0241A02C86495700A25320 /* Build configuration list for PBXNativeTarget "EmbeddingEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB02419E2C86495700A25320 /* Debug */,
+				AB02419F2C86495700A25320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AB426E002C75DECC0057E036 /* Build configuration list for PBXProject "EmbeddingManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
